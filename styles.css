@@ -1,62 +1,66 @@
-html{
+html {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 300;
 }
 
-h1{
+h1 {
     font-size: 36px;
     text-align: center;
+    font-weight: bolder;
 }
 
-h3{
+h3 {
     font-weight: bold;
 }
 
-ul{
+ul {
     list-style: none;
     padding: 0;
 }
 
-div img{
+div img {
     width: 350px;
     height: 350px;
     border-radius: 15px;
 }
 
-.heading{
+.heading {
     font-size: 60px;
     text-align: center;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    gap: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
-.recipe{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+.recipes {
     text-align: center;
-    align-items: center;    
+    align-items: center;
     font-size: 24px;
-    gap: 10px;
-    width: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
 }
 
-.recipe img:hover{
+.recipes img:hover {
     transform: scale(1.05);
     transition: all ease;
     border-radius: 15px;
 }
 
-.recipe-left{
+.recipe-left {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -65,31 +69,31 @@ div img{
     padding-left: 30px;
 }
 
-.recipe-img{
+.recipe-img {
     width: 420px;
     height: 420px;
 }
 
-.right-top{
+.right-top {
     border-radius: 10px;
-    border: 1px solid rgb(41,41,41);
+    border: 1px solid rgb(41, 41, 41);
     padding: 20px;
     height: 250px;
 }
 
-.steps{
+.steps {
     margin-top: 20px;
     border-radius: 10px;
-    border: 1px solid rgb(71,71,71);
+    border: 1px solid rgb(71, 71, 71);
     padding: 20px;
     height: 500px;
     line-height: 1.5;
 }
 
-.ingredients{
-    background-color: rgb(240,240,240);
+.ingredients {
+    background-color: rgb(240, 240, 240);
     border-radius: 10px;
-    border: 1px solid rgb(240,240,240);
+    border: 1px solid rgb(240, 240, 240);
     padding: 20px;
     flex-grow: 1;
     line-height: 1.5;
